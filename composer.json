@@ -8,14 +8,23 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "civiboot": {
+            "type": "vcs",
+            "url":  "https://github.com/argopecten/civiboot"
         }
-    ],
+    },
     "require": {
+        "civicrm/civicrm-core": "^6.3",
+        "civicrm/civicrm-drupal-8": "^6.3",
+        "civicrm/civicrm-packages": "^6.3",
+        "civicrm/cli-tools": "^2025.06",
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^11.2",
         "drupal/core-recipe-unpack": "^11.2",
         "drupal/core-recommended": "^11.2",
@@ -32,7 +41,11 @@
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
+            "civicrm/civicrm-asset-plugin": true,
+            "civicrm/composer-compile-plugin": true,
+            "civicrm/composer-downloads-plugin": true,
             "composer/installers": true,
+            "cweagans/composer-patches": true,
             "dealerdirect/phpcodesniffer-composer-installer": false,
             "drupal/core-composer-scaffold": true,
             "drupal/core-recipe-unpack": true,
@@ -61,6 +74,8 @@
             "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
             "recipes/{$name}": ["type:drupal-recipe"]
-        }
+        },
+        "enable-patching": "true",
+        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
     }
 }
