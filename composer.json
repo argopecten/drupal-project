@@ -20,9 +20,9 @@
     },
     "require": {
         "argopecten/civiboot": "^3.0",
-        "civicrm/civicrm-core": "^6.4",
-        "civicrm/civicrm-drupal-8": "^6.4",
-        "civicrm/civicrm-packages": "^6.4",
+        "civicrm/civicrm-core": "^6.5",
+        "civicrm/civicrm-drupal-8": "^6.5",
+        "civicrm/civicrm-packages": "^6.5",
         "civicrm/cli-tools": "^2025.06",
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
@@ -37,7 +37,6 @@
         "drupal/core-recommended": "^11.2",
         "drupal/core-vendor-hardening": "^11.2",
         "drupal/inline_entity_form": "^3.0@RC",
-        "drupal/rules": "^4.0",
         "drush/drush": "^13.6"
     },
     "require-dev": {
