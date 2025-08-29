@@ -26,7 +26,7 @@
         "civicrm/cli-tools": "^2025.06",
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
-        "drupal/belgrade": "^2.1",
+        "drupal/belgrade": "^2.2",
         "drupal/civicrm_entity": "^4.0",
         "drupal/color_field": "^3.0",
         "drupal/commerce": "^3.1",
