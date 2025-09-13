@@ -8,30 +8,25 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": {
-        "drupal": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        "civiboot": {
-            "type": "vcs",
-            "url":  "https://github.com/argopecten/civiboot"
         }
-    },
+    ],
     "require": {
-        "argopecten/civiboot": "^3.0",
-        "civicrm/civicrm-core": "^6.5",
-        "civicrm/civicrm-drupal-8": "^6.5",
-        "civicrm/civicrm-packages": "^6.5",
+        "civicrm/civicrm-core": "^6.6",
+        "civicrm/civicrm-drupal-8": "^6.6",
+        "civicrm/civicrm-packages": "^6.6",
         "civicrm/cli-tools": "^2025.06",
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
         "drupal/belgrade": "^2.2",
-        "drupal/civicrm_entity": "^4.0",
+        "drupal/civicrm_entity": "^4.0.1",
         "drupal/color_field": "^3.0",
-        "drupal/commerce": "^3.1",
+        "drupal/commerce": "^3.2",
         "drupal/commerce_recurring": "^1.0@RC",
-        "drupal/commerce_shipping": "^2.14",
+        "drupal/commerce_shipping": "^2.15",
         "drupal/core-composer-scaffold": "^11.2",
         "drupal/core-recipe-unpack": "^11.2",
         "drupal/core-recommended": "^11.2",
