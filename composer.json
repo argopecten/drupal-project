@@ -15,15 +15,42 @@
         }
     ],
     "require": {
+        "php": ">=8.3 <8.5",
+        "civicrm/civicrm-core": "^6.10",
+        "civicrm/civicrm-drupal-8": "^6.10",
+        "civicrm/civicrm-packages": "^6.10",
+        "civicrm/cli-tools": "^2025.12",
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/block_visibility_groups": "^2.0",
+        "drupal/civicrm_entity": "^4.0.1",
+        "drupal/commerce": "^3.2",
+        "drupal/commerce_barion_payment": "^2.1",
+        "drupal/commerce_cart_redirection": "^3.3",
+        "drupal/commerce_email": "^1.7",
+        "drupal/commerce_paypal": "^1.10",
+        "drupal/commerce_recurring": "^1.0@RC",
+        "drupal/commerce_shipping": "^2.15",
         "drupal/core-composer-scaffold": "^11.3",
         "drupal/core-recipe-unpack": "^11.3",
         "drupal/core-recommended": "^11.3",
         "drupal/core-vendor-hardening": "^11.3",
+        "drupal/disable_html5_validation": "^2.0",
+        "drupal/inline_entity_form": "^3.0@RC",
+        "drupal/menu_link_attributes": "^1.6",
+        "drupal/menu_per_role": "^1.8",
+        "drupal/mimemail": "^2.0",
+        "drupal/pathauto": "^1.14",
+        "drupal/phpmailer_smtp": "^2.4",
+        "drupal/route_condition": "^2.0",
+        "drupal/smart_trim": "^2.3",
+        "drupal/terms_of_use": "^2.4",
+        "drupal/webp": "^1.0@RC",
         "drush/drush": "^13.7"
     },
     "require-dev": {
-        "drupal/core-dev": "^11.3"
+        "drupal/devel": "^5.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -32,17 +59,25 @@
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
+            "civicrm/civicrm-asset-plugin": true,
+            "civicrm/composer-compile-plugin": true,
+            "civicrm/composer-downloads-plugin": true,
             "composer/installers": true,
-            "dealerdirect/phpcodesniffer-composer-installer": false,
+            "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-recipe-unpack": true,
-            "drupal/core-vendor-hardening": true,
-            "php-http/discovery": true,
-            "php-tuf/composer-integration": true,
-            "phpstan/extension-installer": true,
-            "tbachert/spi": false
+            "drupal/core-vendor-hardening": true
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "8.3"
+        },
+        "process-timeout": 0,
+        "optimize-autoloader": true,
+        "platform-check": true,
+        "audit": {
+            "abandoned": "report"
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -61,6 +96,8 @@
             "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
             "recipes/{$name}": ["type:drupal-recipe"]
-        }
+        },
+        "enable-patching": "true",
+        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
     }
 }
