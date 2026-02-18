@@ -36,7 +36,7 @@
         "drupal/block_visibility_groups": "^2.0",
         "drupal/bootstrap5": "^4.0",
         "drupal/civicrm_entity": "^4.0.1",
-        "drupal/commerce": "^3.2",
+        "drupal/commerce": "^3.3",
         "drupal/commerce_barion_payment": "^2.1",
         "drupal/commerce_cart_redirection": "^3.3",
         "drupal/commerce_email": "^1.7",
@@ -57,7 +57,7 @@
         "drupal/profile": "^1.14",
         "drupal/route_condition": "^2.1",
         "drupal/smart_trim": "^2.3",
-        "drupal/state_machine": "^1.11",
+        "drupal/state_machine": "^1.14",
         "drupal/terms_of_use": "^2.4",
         "drupal/token": "^1.16",
         "drush/drush": "^13.7"
