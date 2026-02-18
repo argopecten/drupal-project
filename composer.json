@@ -8,45 +8,58 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "mh-theme": {
+            "type": "vcs",
+            "url": "https://github.com/argopecten/mh-theme"
+        },
+        "mh-module": {
+            "type": "vcs",
+            "url": "https://github.com/argopecten/mh-module"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
+    },
     "require": {
         "php": ">=8.3 <8.5",
-        "civicrm/civicrm-core": "^6.10",
-        "civicrm/civicrm-drupal-8": "^6.10",
-        "civicrm/civicrm-packages": "^6.10",
+        "argopecten/mh-module": "dev-main",
+        "argopecten/mh-theme": "dev-main",
+        "civicrm/civicrm-core": "^6.11",
+        "civicrm/civicrm-drupal-8": "^6.11",
+        "civicrm/civicrm-packages": "^6.11",
         "civicrm/cli-tools": "^2025.12",
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
-        "drupal/admin_toolbar": "^3.6",
+        "drupal/address": "^2.0",
         "drupal/block_visibility_groups": "^2.0",
+        "drupal/bootstrap5": "^4.0",
         "drupal/civicrm_entity": "^4.0.1",
         "drupal/commerce": "^3.2",
         "drupal/commerce_barion_payment": "^2.1",
         "drupal/commerce_cart_redirection": "^3.3",
         "drupal/commerce_email": "^1.7",
-        "drupal/commerce_paypal": "^1.10",
-        "drupal/commerce_recurring": "^1.0@RC",
-        "drupal/commerce_shipping": "^2.15",
+        "drupal/commerce_paypal": "^2.0",
+        "drupal/commerce_shipping": "^3.0",
         "drupal/core-composer-scaffold": "^11.3",
         "drupal/core-recipe-unpack": "^11.3",
         "drupal/core-recommended": "^11.3",
         "drupal/core-vendor-hardening": "^11.3",
-        "drupal/disable_html5_validation": "^2.0",
+        "drupal/element_class_formatter": "^2.1",
+        "drupal/entity": "^1.6",
+        "drupal/entity_reference_revisions": "^1.11",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/menu_link_attributes": "^1.6",
         "drupal/menu_per_role": "^1.8",
-        "drupal/mimemail": "^2.0",
         "drupal/pathauto": "^1.14",
-        "drupal/phpmailer_smtp": "^2.4",
-        "drupal/route_condition": "^2.0",
+        "drupal/physical": "^1.5",
+        "drupal/profile": "^1.14",
+        "drupal/route_condition": "^2.1",
         "drupal/smart_trim": "^2.3",
+        "drupal/state_machine": "^1.11",
         "drupal/terms_of_use": "^2.4",
-        "drupal/webp": "^1.0@RC",
+        "drupal/token": "^1.16",
         "drush/drush": "^13.7"
     },
     "require-dev": {
@@ -86,18 +99,41 @@
             }
         },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "recipes/{$name}": ["type:drupal-recipe"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "recipes/{$name}": [
+                "type:drupal-recipe"
+            ]
         },
         "enable-patching": "true",
-        "compile-whitelist": ["civicrm/civicrm-core", "civicrm/composer-compile-lib"]
+        "compile-whitelist": [
+            "civicrm/civicrm-core",
+            "civicrm/composer-compile-lib"
+        ]
     }
 }
