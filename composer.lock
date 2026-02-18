@@ -52,19 +52,19 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:argopecten/mh-module.git",
-                "reference": "c8144df02272a778183c220bdcc03d85e9561fff"
+                "reference": "7e002ee435ad54a0f03582985b3ea36b16bcedc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/argopecten/mh-module/zipball/c8144df02272a778183c220bdcc03d85e9561fff",
-                "reference": "c8144df02272a778183c220bdcc03d85e9561fff",
+                "url": "https://api.github.com/repos/argopecten/mh-module/zipball/7e002ee435ad54a0f03582985b3ea36b16bcedc2",
+                "reference": "7e002ee435ad54a0f03582985b3ea36b16bcedc2",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^11"
             },
             "default-branch": true,
-            "type": "drupal-module",
+            "type": "drupal-custom-module",
             "license": [
                 "proprietary"
             ],
@@ -74,7 +74,7 @@
                 "source": "https://github.com/argopecten/mh-module/tree/main",
                 "issues": "https://github.com/argopecten/mh-module/issues"
             },
-            "time": "2026-02-18T09:23:36+00:00"
+            "time": "2026-02-18T14:47:00+00:00"
         },
         {
             "name": "argopecten/mh-theme",
@@ -82,20 +82,20 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:argopecten/mh-theme.git",
-                "reference": "6284a020ce38a176fbb891ed8792742356e679e9"
+                "reference": "8a242de7f4ddf4e74bec316186243db84da660c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/argopecten/mh-theme/zipball/6284a020ce38a176fbb891ed8792742356e679e9",
-                "reference": "6284a020ce38a176fbb891ed8792742356e679e9",
+                "url": "https://api.github.com/repos/argopecten/mh-theme/zipball/8a242de7f4ddf4e74bec316186243db84da660c3",
+                "reference": "8a242de7f4ddf4e74bec316186243db84da660c3",
                 "shasum": ""
             },
             "require": {
                 "drupal/bootstrap5": "*",
-                "drupal/core": "^10.1 || ^11.0"
+                "drupal/core": "^11.0"
             },
             "default-branch": true,
-            "type": "drupal-theme",
+            "type": "drupal-custom-theme",
             "extra": {
                 "installer-name": "hanghu"
             },
@@ -113,7 +113,7 @@
                 "source": "https://github.com/argopecten/mh-theme/tree/main",
                 "issues": "https://github.com/argopecten/mh-theme/issues"
             },
-            "time": "2026-02-18T09:42:35+00:00"
+            "time": "2026-02-18T14:46:49+00:00"
         },
         {
             "name": "asm89/stack-cors",

@@ -82,6 +82,10 @@
             "drupal/core-vendor-hardening": true
         },
         "sort-packages": true,
+        "preferred-install": {
+            "argopecten/mh-*": "source",
+            "*": "dist"
+        },
         "platform": {
             "php": "8.3"
         },
